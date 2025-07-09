@@ -14,7 +14,8 @@
     "jszip": "^3.10.1",
     "file-saver": "^2.0.5",
     "lucide-react": "^0.328.0",
-    "react-confetti": "^6.1.0"
+    "react-confetti": "^6.1.0",
+    "clsx": "^2.1.0"
     
   },
   "devDependencies": {
