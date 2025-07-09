@@ -1,3 +1,4 @@
+tsx import "@/app/globals.css";
 export const metadata = { title: "Happy Birthday Vika" };
 
 export default function Root({ children }: { children: React.ReactNode }) {
