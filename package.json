@@ -24,6 +24,7 @@
     "@types/react": "^18.2.38",
     "@types/file-saver": "^2.0.5",
     "postcss": "^8.4.32",
+    "@types/file-saver": "^2.0.6",
     "@types/node": "^20.11.19",
     "autoprefixer": "^10.4.17"
   }
