@@ -18,8 +18,14 @@ import {
   Upload as UploadIcon,
 } from "lucide-react";
 import JSZip from "jszip";
-import  saveAs  from "file-saver";
+import { saveAs } from "file-saver";
 import clsx from "clsx";
+
+interface Track {
+  title: string;
+  artist: string;
+  url: string;
+}
 
 /* ───────────── Helpers ───────────── */
 const fileToDataURL = (file: File) =>
@@ -41,7 +47,7 @@ const initialAchievements = [
   { date: "2025-07-09", text: "Тебе 20! Впереди новые горизонты 🚀" },
 ];
 
-const topSongs = [];
+const topSongs: Track[] = [];
 
 /* ───────────── Gallery with auto-scroll ───────────── */
 const LiveGallery: React.FC<{ images: string[] }> = ({ images }) => {
@@ -154,7 +160,7 @@ export default function BirthdayGiftVika() {
   );
 
   /* audio */
-  const [tracks, setTracks] = useState<typeof topSongs>(() => topSongs);
+  const [tracks, setTracks] = useState<Track[]>(() => topSongs);
   const [current, setCurrent] = useState<number | null>(null);
 
   /* localStorage sync */
